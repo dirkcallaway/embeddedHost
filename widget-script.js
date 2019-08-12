@@ -1,6 +1,6 @@
 const divContainer = document.createElement('div')
 const frameBox = document.createElement('iframe')
-frameBox.setAttribute("src", "https://pponboardingembeded.herokuapp.com/")
+frameBox.setAttribute("src", "http://localhost:8080/")
 frameBox.setAttribute("scrolling", "no")
 frameBox.setAttribute("id", "onboardwidget")
 frameBox.style.border = 'none'
@@ -24,7 +24,7 @@ window.onload = function () {
 
         console.log("Button Pushed!")
         
-        frame.postMessage(OnBoard_config.userVID, 'https://pponboardingembeded.herokuapp.com/')
+        frame.postMessage(OnBoard_config.userVID, 'http://localhost:8080/')
 
     }
     openBtn.addEventListener("click", sendMessage)
