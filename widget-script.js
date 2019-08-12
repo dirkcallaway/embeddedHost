@@ -5,6 +5,7 @@ frameBox.setAttribute("scrolling", "no")
 frameBox.setAttribute("id", "onboardwidget")
 frameBox.style.border = 'none'
 frameBox.style.width = '450px'
+frameBox.style.height = '600px'
 divContainer.appendChild(frameBox)
 divContainer.style.zIndex = '2'
 divContainer.style.position = 'absolute'
@@ -14,7 +15,7 @@ divContainer.style.right = '0px'
 
 
 window.onload = function () {
-    document.getElementById("widget-box").appendChild(divContainer)
+    document.getElementById(OnBoard_config.selector).appendChild(divContainer)
     let checklistOpened = false;
     const openBtn = document.getElementById('onboard-btn')
     const frame = document.getElementById('onboardwidget').contentWindow
