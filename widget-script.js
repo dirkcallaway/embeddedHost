@@ -24,7 +24,7 @@ window.onload = function () {
 
         console.log("Button Pushed!")
         
-        frame.postMessage(OnBoard_config.userVID, 'https://pponboardingembeded.herokuapp.com/')
+        frame.postMessage(OnBoard_config.userVID, '*')
 
     }
     openBtn.addEventListener("click", sendMessage)
