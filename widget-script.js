@@ -2,7 +2,7 @@
 const divContainer = document.createElement('div')
 divContainer.setAttribute('id', 'widget-box')
 const frameBox = document.createElement('iframe')
-frameBox.setAttribute('src', 'http://localhost:8080/')
+frameBox.setAttribute('src', 'https://pponboardingembeded.herokuapp.com/')
 frameBox.setAttribute('scrolling', 'no')
 frameBox.setAttribute('id', 'onboardwidget')
 frameBox.style.border = 'none'
@@ -47,7 +47,7 @@ window.onload = function () {
 
         console.log("Button Pushed!")
         
-        frame.postMessage(OnBoard_config.userVID, 'http://localhost:8080/')
+        frame.postMessage(OnBoard_config.userVID, '*')
 
     }
 
