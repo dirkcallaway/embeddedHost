@@ -40,6 +40,14 @@ window.onload = function () {
         toggleFrame()
     })
 
+    window.addEventListener('message', (e) => {
+        if(e.origin != 'https://pponboardingembeded.herokuapp.com/') {
+            return
+        }
+
+        frameBox.setAttribute('src', 'https://pponboardingembeded.herokuapp.com/')
+    })
+
     //Function to send message to ifram with user VID (from config)
     const sendMessage = (event) => {
         // event.preventDefault();
@@ -51,7 +59,7 @@ window.onload = function () {
 
     }
 
-    //Set up a MutationsObserver to fire message when ifram is created
+    //Set up a MutationsObserver to fire message when iframe is created
 
     // Select the node that will be observed for mutations
     const targetNode = document.getElementById(OnBoard_config.selector)
