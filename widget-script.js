@@ -47,25 +47,18 @@ window.onload = function () {
 
         console.log("Button Pushed!")
         
-        frame.postMessage(OnBoard_config.userVID, '*')
+        frame.postMessage(OnBoard_config.userVID, 'https://pponboardingembeded.herokuapp.com/')
 
     }
-
-    // Button to test functionality of message sent
-    const openBtn = document.getElementById('onboard-btn')
-    openBtn.addEventListener("click", sendMessage)
 
     //Set up a MutationsObserver to fire message when ifram is created
 
     // Select the node that will be observed for mutations
     const targetNode = document.getElementById(OnBoard_config.selector)
-
     // Options for the observer (which mutations to observe)
     const config = { childList: true }
-
     // Create an observer instance linked to the callback function
     const observer = new MutationObserver(sendMessage);
-
     // Start observing the target node for configured mutations
     observer.observe(targetNode, config);
 
