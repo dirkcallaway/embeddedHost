@@ -22,4 +22,6 @@ The userVID is the unique identifier for your user on Hubspot.  The selector is 
 
 ## Current Limitations
 
-Currently the widget aligns to the right, however in future implimintations it will have different options via a config variable.  Also, due to the use of the Hubspot CRM and not an actual DB, the API calls can be slow in their response causing a delay in the updating of checklist.
+* Currently the widget aligns to the right, however in future implimintations it will have different options via a config variable.  
+* Due to the use of the Hubspot CRM and not an actual DB, the API calls can be slow in their response causing a delay in the updating of checklist.
+* Checklist is not currently mobile responsive. Updates to the widgets styling will be added in the future.
